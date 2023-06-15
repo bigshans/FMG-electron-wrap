@@ -8,6 +8,7 @@ pkgbase = fantasy-map-generator
 	depends = electron
 	depends = libappindicator-gtk3
 	depends = ffmpeg
+	conflicts = fantasy-map-generator-git
 	source = fmg-v1.8.tar.gz::https://codeload.github.com/Azgaar/Fantasy-Map-Generator/tar.gz/refs/tags/v1.8
 	source = electron.main.js
 	sha256sums = 927ba205d4cf13d15446c3c5f1e25026b59f8fb833f0e19ede475ad07344ad6e

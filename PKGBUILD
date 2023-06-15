@@ -10,6 +10,7 @@ arch=("any")
 url="https://github.com/Azgaar/Fantasy-Map-Generator"
 license=('MIT')
 depends=('electron' libappindicator-gtk3 ffmpeg)
+conflicts=(fantasy-map-generator-git)
 source=(${_pkgname}-$pkgver.tar.gz::https://codeload.github.com/Azgaar/Fantasy-Map-Generator/tar.gz/refs/tags/$pkgver
         electron.main.js)
 sha256sums=('927ba205d4cf13d15446c3c5f1e25026b59f8fb833f0e19ede475ad07344ad6e'
@@ -41,4 +42,5 @@ Keywords=map;generator;fantasy;fmg;
 Terminal=false
 SingleMainWindow=true" >> "$pkgdir"/usr/share/applications/$pkgname.desktop
     chmod +x "$pkgdir/usr/bin/${_pkgname}"
+    rm -rf "$pkgdir"/usr/lib/${pkgname}/.git
 }
