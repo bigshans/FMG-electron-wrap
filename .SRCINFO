@@ -1,0 +1,16 @@
+pkgbase = fantasy-map-generator
+	pkgdesc = Web application generating interactive and highly customizable maps
+	pkgver = v1.8
+	pkgrel = 1
+	url = https://github.com/Azgaar/Fantasy-Map-Generator
+	arch = any
+	license = MIT
+	depends = electron
+	depends = libappindicator-gtk3
+	depends = ffmpeg
+	source = fmg-v1.8.tar.gz::https://codeload.github.com/Azgaar/Fantasy-Map-Generator/tar.gz/refs/tags/v1.8
+	source = electron.main.js
+	sha256sums = 927ba205d4cf13d15446c3c5f1e25026b59f8fb833f0e19ede475ad07344ad6e
+	sha256sums = 7b21b853c45a627c0068a9ad1805cc185e63a541da0ba9fcc99502f95da8301d
+
+pkgname = fantasy-map-generator
