@@ -2,7 +2,7 @@
 
 pkgname=fantasy-map-generator
 _pkgname=fmg
-_pkgver=1.8
+_pkgver=1.9
 pkgver=v${_pkgver}
 pkgrel=1
 pkgdesc="Web application generating interactive and highly customizable maps "
@@ -13,7 +13,7 @@ depends=('electron' libappindicator-gtk3 ffmpeg)
 conflicts=(fantasy-map-generator-git)
 source=(${_pkgname}-$pkgver.tar.gz::https://codeload.github.com/Azgaar/Fantasy-Map-Generator/tar.gz/refs/tags/$pkgver
         electron.main.js)
-sha256sums=('927ba205d4cf13d15446c3c5f1e25026b59f8fb833f0e19ede475ad07344ad6e'
+sha256sums=('4aae3d3f13041aa4508829feea50346195974164ca98d0f8b4eda52ce39257a3'
             '7b21b853c45a627c0068a9ad1805cc185e63a541da0ba9fcc99502f95da8301d')
 
 package() {
@@ -23,7 +23,7 @@ package() {
     install -d "$pkgdir"/usr/bin
     install -d "$pkgdir"/usr/share/applications
     install -d "$pkgdir"/usr/share/icons
-    cp "$srcdir/${name}-${_pkgver}"/images/favicon-32x32.png "$pkgdir/usr/share/icons/fmg.png"
+    cp "$srcdir/${name}-${_pkgver}"/images/icons/favicon-32x32.png "$pkgdir/usr/share/icons/fmg.png"
     cp -R "$srcdir/${name}-${_pkgver}" "$pkgdir"/usr/lib/${pkgname}
 
     echo "#!/bin/env bash
